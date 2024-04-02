@@ -1,7 +1,9 @@
 <?php
-require "./requires/db.php"
-?>
+require "./requires/db.php" ;
 
+
+
+?>
 
 <!doctype html>
 <html lang="en">
@@ -22,13 +24,15 @@ require "./requires/db.php"
             <div class="w-100 justify-content-center">
                 <form action="./requires/login.php" method="post" class="form text-uppercase fw-bold w-25 mx-auto ">
                     <div class="h4 text-center fw-bold text-uppercase mt-5"> Welcom .... Sign in </div>
+                    <hr>
+                    <?= @$message?>
                     <div class="py-3">
                         <label for="">Login </label>
-                        <input type="email" required name="login" id="" class="form-control" placeholder="login ...">
+                        <input type="email"  name="login" id="" class="form-control" placeholder="login ...">
                     </div>
                     <div class="py-3">
                         <label for="">mot de passe  </label>
-                        <input type="password" required name="password" id="" class="form-control" placeholder="enter password ">
+                        <input type="password" s name="password" id="" class="form-control" placeholder="enter password ">
                     </div>
                     <div class="py-3 text-center">
 
@@ -44,7 +48,6 @@ require "./requires/db.php"
     </div>
 
 </div>
-<?php include "./includes/footer.php"?>
 
 </body>
 </html>

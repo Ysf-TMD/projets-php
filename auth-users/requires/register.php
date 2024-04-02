@@ -52,15 +52,12 @@ if(isset($_POST["submit"]))
                         <input type="submit" name="submit" value="sign in " id="" class="btn btn-sm w-100 text-white bg-primary">
                     </div>
                     <div class="py-1 text-end text-muted">
-                        <a href="./requires/register.php" class="text-white nav-link">Sign in </a>
+                        <a href="../index.php" class="text-white nav-link">Sign in </a>
                     </div>
-
                 </form>
             </div>
         </div>
     </div>
-
 </div>
-
 </body>
 </html>

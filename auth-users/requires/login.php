@@ -9,12 +9,13 @@ if(isset($_POST["submit"])){
         $data=$select->fetch(PDO::FETCH_ASSOC);
         if($data){
             session_start() ;
+
             $_SESSION["user_name"] = $data["user_name"];
             $_SESSION["login"]=$data["login"];
             $_SESSION["password"]=$data["password"];
-            var_dump($_SESSION);
+            header("location:../pages/dashboard.php");
         }
     }else{
-        echo "erreur during login ... ";
+        header("location:../index.php");
     }
 }
